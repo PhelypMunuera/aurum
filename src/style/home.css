@@ -1,9 +1,3 @@
-h1,
-h3,
-.titleItem {
-  font-family: var(--font-baloo);
-}
-
 header {
   display: flex;
   width: 100%;
@@ -20,7 +14,7 @@ header img {
 }
 
 .marketCntainer {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
@@ -62,4 +56,70 @@ header img {
   display: block;
   color: var(--color-dark-taupe);
   font-size: 22px;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-background);
+  padding: 163px;
+  height: 544px;
+  gap: 30px;
+}
+
+#imgLogo img {
+  width: 496px;
+  height: 372px;
+}
+
+h1 {
+  font-family: var(--font-baloo);
+  font-size: var(--font-title-xl-fs48);
+  font-weight: var(--fw-extrabold);
+  line-height: var(--lh-normal);
+}
+
+.subtitle {
+  font-family: var(--font-roboto);
+  font-size: var(--font-title-s-fs20);
+  font-weight: var(--fw-regular);
+}
+
+.featureAll {
+  display: flex;
+  gap: 15px;
+  margin-top: 66px;
+}
+
+.bulletPoints {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bulletPoints p {
+  font-family: var(--font-roboto);
+  font-size: var(--font-title-xxs-fs14);
+  font-weight: var(--fw-regular);
+}
+
+#bulletcar,
+#bullettimer {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 50%;
+  color: var(--color-background);
+}
+#bulletcar {
+  background-color: var(--color-dark-taupe);
+}
+#bullettimer {
+  background-color: var(--color-sand);
+}
+h3 {
+  font-family: var(--font-baloo);
+  font-size: var(--font-title-x-fs32);
+}
+.catalog {
+  padding: 163px;
 }
