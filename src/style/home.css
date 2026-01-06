@@ -61,6 +61,7 @@ header img {
 .intro {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: var(--color-background);
   padding: 163px;
   height: 544px;
@@ -83,6 +84,7 @@ h1 {
   font-family: var(--font-roboto);
   font-size: var(--font-title-s-fs20);
   font-weight: var(--fw-regular);
+  margin-top: 16px;
 }
 
 .featureAll {
@@ -116,10 +118,14 @@ h1 {
 #bullettimer {
   background-color: var(--color-sand);
 }
+
+.catalog {
+  background: var(--color-background);
+  padding: 0 163px;
+}
+
 h3 {
   font-family: var(--font-baloo);
   font-size: var(--font-title-x-fs32);
-}
-.catalog {
-  padding: 163px;
+  color: var(--color-base-title);
 }
