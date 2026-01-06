@@ -1,7 +1,44 @@
-*{
-    font-size: ;
-    font-family: ;
-    font-weight: ;
-}
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-colgroup
+:root {
+  /* COLORS */
+  --color-dark-taupe: #584c3a;
+  --color-sand: #a79973;
+  --color-ivory: #e9e5da;
+
+  --color-terracotta: #a96149;
+  --color-amber: #de9a45;
+  --color-vanilla: #ffefc4;
+
+  --color-base-title: #272221;
+  --color-base-subtitle: #403937;
+  --color-base-text: #574f4d;
+  --color-base-label: #8d8686;
+  --color-base-hover: #d7d5d5;
+
+  --color-base-button: #e6e5e5;
+  --color-base-input: #ededed;
+  --color-base-card: #f3f2f2;
+  --color-background: #fafafa;
+  --color-white: #ffffff;
+
+  /* FONTS  */
+  --font-baloo: "Baloo 2", system-ui, sans-serif;
+  --font-roboto: "Roboto", system-ui, sans-serif;
+
+  /* FONT SIZE */
+  --font-title-xl-fs48: 3rem;
+  --font-title-x-fs32: 2rem;
+  --font-title-m-fs24: 1.5rem;
+  --font-title-s-fs20: 1.5rem;
+  --font-title-xs-fs18: 1.12rem;
+
+  /* FONT WEIGHT */
+  --fw-extrabold: 900;
+  --fw-bold: 700;
+  --fw-regular: 400;
+
+  /* FONT LINEHEIGHT */
+  --lh-normal: 1.3;
+  --lh-relaxed: 1.6;
+}
