@@ -11,7 +11,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         image:'relogio-2', 
-        tags:['esportivo'],
+        tags:['casual'],
         name:'Tempus Noir' ,
         descriptions:'Elegância discreta com acabamento sofisticado.',
         price: 982.99, 
@@ -19,7 +19,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         image:'relogio-3', 
-        tags:['esportivo'],
+        tags:['casual'],
         name:'Atlas Timekeeper' ,
         descriptions:'Visual forte e funcional para o dia a dia.',
         price: 982.99, 
@@ -27,7 +27,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         image:'relogio-4', 
-        tags:['esportivo'],
+        tags:['classico', 'luxo'],
         name:'Vértice Prime' ,
         descriptions:' Clássico refinado com presença marcante.',
         price: 982.99, 
@@ -35,7 +35,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         image:'relogio-5', 
-        tags:['esportivo'],
+        tags:['classico', 'luxo'],
         name:'Nebula One' ,
         descriptions:'Estilo tradicional com toque contemporâneo.',
         price: 982.99, 
@@ -43,7 +43,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         image:'relogio-6', 
-        tags:['esportivo'],
+        tags:['classico', 'luxo'],
         name:'Eon Steel' ,
         descriptions:'Elegância metálica com visual atemporal.',
         price: 982.99, 
@@ -51,7 +51,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         image:'relogio-7', 
-        tags:['esportivo'],
+        tags:['classico', 'importado'],
         name:'Chronix Pulse' ,
         descriptions:'Design moderno com detalhes precisos.',
         price: 982.99, 
@@ -59,7 +59,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         image:'relogio-8', 
-        tags:['esportivo'],
+        tags:['classico', 'luxo'],
         name:'Lumen Watch' ,
         descriptions:'Simples, elegante e fácil de combinar.',
         price: 982.99, 
@@ -67,7 +67,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         image:'relogio-9', 
-        tags:['esportivo'],
+        tags:['classico', 'luxo'],
         name:'Orion Mark I' ,
         descriptions:' Estilo casual com personalidade marcante.',
         price: 982.99, 
@@ -75,7 +75,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         image:'relogio-10', 
-        tags:['esportivo'],
+        tags:['esportivo', 'casual'],
         name:'Irlandês' ,
         descriptions:'Casual e autêntico, com charme diferenciado.',
         price: 982.99, 
@@ -83,7 +83,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         image:'relogio-11', 
-        tags:['esportivo'],
+        tags:['classico', 'luxo'],
         name:'Zenith Core' ,
         descriptions:'Clássico sofisticado para todas as ocasiões.',
         price: 982.99, 
@@ -91,7 +91,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         image:'relogio-12', 
-        tags:['esportivo'],
+        tags:['classico', 'automático', 'importado'],
         name:'Cubano' ,
         descriptions:'Visual imponente com acabamento premium.',
         price: 982.99, 
@@ -99,7 +99,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         image:'relogio-13', 
-        tags:['esportivo'],
+        tags:['casual'],
         name:'Astra Vault' ,
         descriptions:'Design moderno com toque urbano.',
         price: 982.99, 
@@ -111,6 +111,6 @@ export const products = [
         name:'IronTick Classic' ,
         descriptions:'Estilo esportivo com visual resistente.',
         price: 982.99, 
-    },
+    }
 
 ]
