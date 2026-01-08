@@ -24,7 +24,10 @@
   </head>
   <body>
     <header>
-      <img src="./assets/image/logo/logo-full.png" alt="Logo  for Aurum in black" />
+      <img
+        src="./assets/image/logo/logo-full.png"
+        alt="Logo  for Aurum in black"
+      />
       <div class="marketCntainer">
         <div id="yourLocation">
           <i class="ph-fill ph-map-pin"></i>
@@ -39,7 +42,7 @@
     <section class="bodyHome">
       <section class="intro">
         <div id="inform">
-          <h1>Encontre o relógio  <br>perfeito para o dia a dia</h1>
+          <h1>Encontre o relógio <br />perfeito para o dia a dia</h1>
           <p class="subtitle">
             Com o Aurum você recebe seu relogio onde estiver, com o melhor
             conforto
@@ -64,9 +67,18 @@
       </section>
       <section class="catalog">
         <h3>Nossos catálogo</h3>
-        <div></div>
+        <div id="catalogShow">
+          <div class="amountProducts">
+            <i class="ph ph-minus"></i>
+            <input placeholder="0" type="text" />
+            <i class="ph ph-plus"></i>
+          </div>
+          <Button id="addToCard">
+            <i class="ph-fill ph-shopping-cart"></i>
+          </Button>
+        </div>
       </section>
     </section>
-    <script type="module" src="./scripts/fuction.js" ></script>
+    <script type="module" src="./scripts/fuction.js"></script>
   </body>
 </html>
