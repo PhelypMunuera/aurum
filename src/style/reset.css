@@ -8,11 +8,22 @@
   font-family: "Roboto", system-ui, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-
-  border-bottom: none;
 }
 
 button {
   border: none;
   cursor: pointer;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-base-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+button,
+input,
+textarea {
+  font: 400 1rem "Roboto", sans-serif;
 }

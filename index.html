@@ -24,61 +24,85 @@
   </head>
   <body>
     <header>
-      <img
-        src="./assets/image/logo/logo-full.png"
-        alt="Logo  for Aurum in black"
-      />
-      <div class="marketCntainer">
-        <div id="yourLocation">
-          <i class="ph-fill ph-map-pin"></i>
-          <span>Porto Alegre, RS</span>
+      <nav>
+        <a href="">
+          <img
+            src="./assets/image/logo/logo-full.png"
+            alt="Logo  for Aurum in black"
+          />
+        </a>
+
+        <div class="shopping-container">
+          <div id="location">
+            <i class="ph-fill ph-map-pin"></i>
+            <span>Porto Alegre, RS</span>
+          </div>
+          <button class="shopping-cart">
+            <span class="itemCounter"></span>
+            <i class="ph-fill ph-shopping-cart"></i>
+          </button>
         </div>
-        <button class="marketCar">
-          <span class="itemCounter"></span>
-          <i class="ph-fill ph-shopping-cart"></i>
-        </button>
-      </div>
+      </nav>
     </header>
-    <section class="bodyHome">
-      <section class="intro">
-        <div id="inform">
-          <h1>Encontre o relógio <br />perfeito para o dia a dia</h1>
-          <p class="subtitle">
+
+    <main>
+      <section class="landing-page">
+        <div id="content">
+          <h1>Encontre o relógio perfeito para o dia a dia</h1>
+          <h2>
             Com o Aurum você recebe seu relogio onde estiver, com o melhor
             conforto
-          </p>
-          <div class="featureAll">
-            <div class="bulletPoints">
-              <i id="bulletcar" class="ph-fill ph-shopping-cart"></i>
-              <p>Compra simples e segura</p>
+          </h2>
+          <div class="features">
+            <div class="feature">
+              <i id="shopping-cart-icon" class="ph-fill ph-shopping-cart"></i>
+              <span>Compra simples e segura</span>
             </div>
-            <div class="bulletPoints">
-              <i id="bullettimer" class="ph-fill ph-timer"></i>
-              <p>Entrega rápida e rastreada</p>
+            <div class="feature">
+              <i id="timer-icon" class="ph-fill ph-timer"></i>
+              <span>Entrega rápida e rastreada</span>
             </div>
           </div>
         </div>
-        <div id="imgLogo">
-          <img
-            src="./assets/image/logo/logo-icon.png"
-            alt="The Aurum logo icon is the abbreviation , AU"
-          />
-        </div>
+
+        <img
+          src="./assets/image/logo/logo-icon.png"
+          alt="The Aurum logo icon is the abbreviation , AU"
+        />
       </section>
+
       <section class="catalog">
-        <h3>Nossos catálogo</h3>
-        <div id="catalogShow">
-          <div class="amountProducts">
-            <i class="ph ph-minus"></i>
-            <input placeholder="0" type="text" />
-            <i class="ph ph-plus"></i>
-          </div>
-          <Button id="addToCard">
-            <i class="ph-fill ph-shopping-cart"></i>
-          </Button>
+        <h2>Nossos catálogo</h2>
+        <div id="catalog-grid">
+          <article class="product">
+            <img src="./assets/image/products/relogio-1.png" alt="relogio 1" />
+            <div class="tags">
+              <span>Casual</span>
+              <span>Luxo</span>
+              <span>Esportivo</span>
+            </div>
+
+            <h3>Chronos</h3>
+            <p>Design robusto com estilo esportivo e moderno.</p>
+            <footer>
+              <span>R$ 987,98</span>
+              <div class="amountProducts">
+                <i class="ph ph-minus"></i>
+                <input placeholder="0" type="text" />
+                <i class="ph ph-plus"></i>
+              </div>
+              <button id="addToCard">
+                <i class="ph-fill ph-shopping-cart"></i>
+              </button>
+            </footer>
+          </article>
         </div>
       </section>
-    </section>
-    <script type="module" src="./scripts/fuction.js"></script>
+    </main>
+    <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>
+
+<!--  -->
+
+<!-- amanha mudar nome das classe -->

@@ -27,12 +27,12 @@
   --font-roboto: "Roboto", system-ui, sans-serif;
 
   /* FONT SIZE */
-  --font-title-xl-fs48: 48px;
-  --font-title-x-fs32: 32px;
-  --font-title-m-fs24: 24px;
-  --font-title-s-fs20: 20px;
-  --font-title-xs-fs18: 18px;
-  --font-title-xxs-fs14: 14px;
+  --font-title-xl: 48px;
+  --font-title-x: 32px;
+  --font-title-m: 24px;
+  --font-title-s: 20px;
+  --font-title-xs: 18px;
+  --font-title-xxs: 14px;
 
   /* FONT WEIGHT */
   --fw-extrabold: 900;
