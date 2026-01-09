@@ -155,6 +155,7 @@ header .shopping-container #location i {
 
 .catalog ul li {
   list-style: none;
+  width: 256px;
 }
 
 .catalog ul li article {
@@ -200,10 +201,9 @@ header .shopping-container #location i {
 }
 
 .catalog ul li article footer {
- display: flex;
- gap: 8px;
- margin-top: 33px;
-
+  display: flex;
+  gap: 8px;
+  margin-top: 33px;
 }
 
 .catalog ul li article footer span {
@@ -227,10 +227,10 @@ header .shopping-container #location i {
   justify-content: center;
   gap: 4px;
   padding: 8px 12px;
-  height: 38px ;
+  height: 38px;
 }
 footer .amount button {
-  background-color:  transparent;
+  background-color: transparent;
   display: flex;
   align-items: center;
 }
@@ -239,7 +239,6 @@ footer .amount button i {
   color: var(--color-amber);
   font-size: 14px;
   cursor: pointer;
-
 }
 
 footer .amount input {
