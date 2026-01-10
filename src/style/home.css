@@ -172,7 +172,10 @@ header .shopping-container #location i {
   height: 120px;
   margin-top: -55px;
 }
-
+.catalog ul li article .tags {
+  display:  flex;
+  gap: 8px;
+}
 .catalog ul li article .tags span {
   font-size: var(--font-title-xxs);
   color: var(--color-dark-taupe);
