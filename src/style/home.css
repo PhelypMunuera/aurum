@@ -249,9 +249,20 @@ footer .amount input {
   background-color: transparent;
   border: none;
   text-align: center;
-  width: 20px;
+  width: 30px;
   font-size: var(--font-title-xs);
   color: var(--color-base-title);
+}
+
+footer .amount input[type="number"]::-webkit-outer-spin-button,
+footer .amount input[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+footer .amount input[type="number"]{
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 #addToCard {
