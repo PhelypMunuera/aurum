@@ -1,5 +1,5 @@
 import { products } from "./products.js";
-import { controlsAmonts } from "./operations.js";
+import { amontInput } from "./operations.js";
 
 const unorderedList = document.querySelector("ul");
 
@@ -24,7 +24,7 @@ products.forEach(({ tags, image, name, price, descriptions }) => {
         <span>R$<strong>${price}</strong></span>
         <div class="amount">
          <button class="btn-minus""> <i class="ph ph-minus"></i></button>
-          <input  type="number" placeholder="0"/>
+          <input disabled type="number" value="1"/>
           <button class="btn-plus"><i class="ph ph-plus"></i></button>
         </div>
         <button id="addToCard">
@@ -35,6 +35,5 @@ products.forEach(({ tags, image, name, price, descriptions }) => {
   </li>`;
 });
 
-controlsAmonts("ul");
+amontInput();
 
-// percorrer os produtos e renderizar um elemento html para cada produto

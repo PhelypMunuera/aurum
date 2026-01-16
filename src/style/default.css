@@ -34,6 +34,9 @@
   --font-title-xs: 18px;
   --font-title-xxs: 14px;
 
+  /* FONT SIZE  TEXTS*/
+  --font-text-m: 16px;
+
   /* FONT WEIGHT */
   --fw-extrabold: 900;
   --fw-bold: 700;

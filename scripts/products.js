@@ -91,7 +91,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         image:'relogio-12', 
-        tags:['classico', 'automático', 'importado'],
+        tags:['automático', 'importado'],
         name:'Cubano' ,
         descriptions:'Visual imponente com acabamento premium.',
         price: 982.99, 

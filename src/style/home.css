@@ -22,7 +22,9 @@ header nav {
   align-items: center;
   margin: 0 auto;
 }
-
+header  nav div button span {
+  color: blueviolet;
+}
 header .shopping-container {
   display: flex;
   justify-content: center;
@@ -164,7 +166,8 @@ header .shopping-container #location i {
   align-items: center;
   background-color: var(--color-base-card);
   border-radius: 6px 36px 6px 36px;
-  padding: 20px 24px;
+  padding: 18px 22px;
+  height: 100%;
 }
 
 .catalog ul li article img {
@@ -195,7 +198,7 @@ header .shopping-container #location i {
 
 .catalog ul li article p {
   font-family: var(--font-roboto);
-  font-size: var(--font-title-xs);
+  font-size: var(--font-title-xxs);
   color: var(--color-base-label);
   font-weight: var(--fw-regular);
   line-height: var(--lh-normal);
@@ -229,9 +232,12 @@ header .shopping-container #location i {
   align-items: center;
   justify-content: center;
   gap: 4px;
-  padding: 8px 12px;
+  padding: 8px;
   height: 38px;
+  
 }
+
+
 footer .amount button {
   background-color: transparent;
   display: flex;
@@ -249,8 +255,8 @@ footer .amount input {
   background-color: transparent;
   border: none;
   text-align: center;
-  width: 30px;
-  font-size: var(--font-title-xs);
+  width: 20px;
+  font-size: var(--font-text-m);
   color: var(--color-base-title);
 }
 
@@ -279,3 +285,5 @@ footer .amount input[type="number"]{
   color: var(--color-base-card);
   font-size: 22px;
 }
+
+
