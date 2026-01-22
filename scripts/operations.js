@@ -15,7 +15,6 @@ export function amontInput() {
           valueInput--;
         }
       }
-
       input.value = valueInput;
     });
   });

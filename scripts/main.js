@@ -1,5 +1,6 @@
 import { products } from "./products.js";
 import { amontInput } from "./operations.js";
+import { intesInCart } from "./intes-in-cart.js";
 
 const unorderedList = document.querySelector("ul");
 
@@ -27,7 +28,7 @@ products.forEach(({ tags, image, name, price, descriptions }) => {
           <input disabled type="number" value="1"/>
           <button class="btn-plus"><i class="ph ph-plus"></i></button>
         </div>
-        <button id="addToCard">
+        <button class="addToCard">
           <i class="ph-fill ph-shopping-cart"></i>
         </button>
       </footer>
@@ -36,4 +37,5 @@ products.forEach(({ tags, image, name, price, descriptions }) => {
 });
 
 amontInput();
+intesInCart()
 
