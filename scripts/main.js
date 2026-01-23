@@ -4,10 +4,10 @@ import { intesInCart } from "./intes-in-cart.js";
 
 const unorderedList = document.querySelector("ul");
 
-products.forEach(({ tags, image, name, price, descriptions }) => {
+products.forEach(({  id, tags, image, name, price, descriptions }) => {
   unorderedList.innerHTML +=
   `<li>  
-    <article>
+    <article id='${id}'>
       <img
         src="./assets/image/products/${image}.png"
         alt="relogio 1"
