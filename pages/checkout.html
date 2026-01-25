@@ -1,11 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurum</title>
+    <link rel="stylesheet" href="../src/style/reset.css" />
+    <link rel="stylesheet" href="../src/style/default.css" />
+
+    <!-- ICONS IMPORTS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
+    <!-- SYTLE PAGE -->
+    <link rel="stylesheet" href="../src/style/check-cart.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html">
+          <img
+            src="../assets/image/logo/logo-full.png"
+            alt="Logo  for Aurum in black"
+          />
+        </a>
+
+        <div class="shopping-container">
+          <div id="location">
+            <i class="ph-fill ph-map-pin"></i>
+            <span>Porto Alegre, RS</span>
+          </div>
+          <button onPress="" class="shopping-cart">
+            <div class="container-couter">
+              <span class="itemCounter">0</span>
+            </div>
+            <i class="ph-fill ph-shopping-cart"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="informations">
+        <h1>Complete seu pedido</h1>
+        <div class="conteiner-form">
+          <form action="#">
+            <div class="description">
+              <i class="ph ph-map-pin-line"></i>
+              <div class="text-description">
+                <h2>Endereço de Entrega</h2>
+                <span>Informe o endereço onde deseja receber seu pedido</span>
+              </div>
+            </div>
+            <div class="inputs">
+              <input
+                class="fielInForm"
+                id="zipCode"
+                type="text"
+                placeholder="CEP"
+              />
+              <input
+                class="fielInForm"
+                id="adress"
+                type="text"
+                placeholder="Rua"
+              />
+              <input
+                class="fielInForm"
+                id="number-adress"
+                type="text"
+                placeholder="Número"
+              />
+              <div>
+                <label for="option">Opcional</label>
+                <input
+                  class="fielInForm"
+                  id="complete"
+                  type="text"
+                  placeholder="Complemento"
+                />
+              </div>
+              <input
+                class="fielInForm"
+                id="district"
+                type="text"
+                placeholder="Bairro"
+              />
+              <input
+                class="fielInForm"
+                id="city"
+                type="text"
+                placeholder="Cidade"
+              />
+              <input
+                class="fielInForm"
+                id="state"
+                type="text"
+                placeholder="UF"
+              />
+            </div>
+          </form>
+          <div class="paySelected">
+            <div class="description">
+              <i class="ph ph-currency-dollar"></i>
+              <div class="text-description">
+                <h2>Pagamento</h2>
+                <span
+                  >O pagamento é feito na entrega. Escolha a forma que deseja
+                  pagar</span
+                >
+              </div>
+            </div>
+            <div class="buttons">
+              <label>
+                <input type="radio" value="credit" name="pagamento" />
+                <i class="ph ph-credit-card"></i>
+                <span>Cartão de crédito</span>
+              </label>
+
+              <label>
+                <input type="radio" value="debit" name="pagamento" />
+                <i class="ph ph-bank"></i>
+                <span>cartão de débito</span>
+              </label>
+
+              <label>
+                <input type="radio" value="money" name="pagamento" />
+                <i class="ph ph-money"></i>
+                <span>dinheiro</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="selectedIntens">
+        <h1>Cafés selecionados</h1>
+        <div class="container-itens">
+          <article>
+            <img src="../assets/image/products/relogio-1.png" alt="" />
+            <div class="iten-select">
+              <h1>Expresso Tradicional</h1>
+              <div class="action-iten">
+                <div class="amount">
+                  <button class=""><i class="ph ph-minus"></i></button>
+                  <input disabled type="number" value="1" />
+                  <button class=""><i class="ph ph-plus"></i></button>
+                </div>
+                <button>
+                  <i class="ph ph-trash"></i>
+                  Remover
+                </button>
+              </div>
+            </div>
+            <span>R$ 897,90</span>
+          </article>
+          <table>
+          <tbody>
+            <tr>
+              <td>Total de itens</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Entrega</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <button>confirmar pedido</button>
+        </div>
+        
+      </section>
+    </main>
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
 </html>
