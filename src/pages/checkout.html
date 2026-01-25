@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aurum</title>
-    <link rel="stylesheet" href="../src/style/reset.css" />
-    <link rel="stylesheet" href="../src/style/default.css" />
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/default.css" />
 
     <!-- ICONS IMPORTS -->
     <link
@@ -20,14 +20,14 @@
     />
 
     <!-- SYTLE PAGE -->
-    <link rel="stylesheet" href="../src/style/check-cart.css" />
+    <link rel="stylesheet" href="..//style/check-cart.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="./index.html">
+        <a href="../../index.html">
           <img
-            src="../assets/image/logo/logo-full.png"
+            src="../../assets/image/logo/logo-full.png"
             alt="Logo  for Aurum in black"
           />
         </a>
@@ -144,43 +144,63 @@
       <section class="selectedIntens">
         <h1>Cafés selecionados</h1>
         <div class="container-itens">
-          <article>
-            <img src="../assets/image/products/relogio-1.png" alt="" />
-            <div class="iten-select">
-              <h1>Expresso Tradicional</h1>
-              <div class="action-iten">
-                <div class="amount">
-                  <button class=""><i class="ph ph-minus"></i></button>
-                  <input disabled type="number" value="1" />
-                  <button class=""><i class="ph ph-plus"></i></button>
+          <ul>
+            <li>
+              <img src="../../assets/image/products/relogio-1.png" alt="" />
+              <div class="iten-select">
+                <h1>Expresso Tradicional</h1>
+                <div class="action-iten">
+                  <div class="amount">
+                    <button class=""><i class="ph ph-minus"></i></button>
+                    <input disabled type="number" value="1" />
+                    <button class=""><i class="ph ph-plus"></i></button>
+                  </div>
+                  <button class="remove">
+                    <i class="ph ph-trash"></i>
+                    Remover
+                  </button>
                 </div>
-                <button>
-                  <i class="ph ph-trash"></i>
-                  Remover
-                </button>
               </div>
-            </div>
-            <span>R$ 897,90</span>
-          </article>
+              <span><strong>R$</strong> 897,90</span>
+            </li>
+            <li>
+              <img src="../../assets/image/products/relogio-1.png" alt="" />
+              <div class="iten-select">
+                <h1>Expresso Tradicional</h1>
+                <div class="action-iten">
+                  <div class="amount">
+                    <button class=""><i class="ph ph-minus"></i></button>
+                    <input disabled type="number" value="1" />
+                    <button class=""><i class="ph ph-plus"></i></button>
+                  </div>
+                  <button class="remove">
+                    <i class="ph ph-trash"></i>
+                    Remover
+                  </button>
+                </div>
+              </div>
+              <span><strong>R$</strong> 897,90</span>
+            </li>
+
+          </ul>
           <table>
-          <tbody>
-            <tr>
-              <td>Total de itens</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Entrega</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Total</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-        <button>confirmar pedido</button>
+            <tbody>
+              <tr>
+                <td>Total de itens</td>
+                <td class="sum">8273,98</td>
+              </tr>
+              <tr>
+                <td>Entrega</td>
+                <td class="delivery">98,98</td>
+              </tr>
+              <tr class="all">
+                <td >Total</td>
+                <td class="total">9823,00</td>
+              </tr>
+            </tbody>
+          </table>
+          <button id="confirmation">confirmar pedido</button>
         </div>
-        
       </section>
     </main>
     <script type="module" src="./scripts/main.js"></script>

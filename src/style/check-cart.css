@@ -5,12 +5,10 @@ header {
   top: 0;
   background-color: var(--color-background);
 }
-
 header img {
   width: 108px;
   height: 81px;
 }
-
 header nav {
   max-width: 1120px;
   display: flex;
@@ -22,7 +20,6 @@ header nav {
   align-items: center;
   margin: 0 auto;
 }
-
 header .shopping-container {
   display: flex;
   justify-content: center;
@@ -30,7 +27,6 @@ header .shopping-container {
   gap: 12px;
   height: 38px;
 }
-
 header .shopping-container #location {
   display: inline-flex;
   background-color: var(--color-vanilla);
@@ -41,7 +37,6 @@ header .shopping-container #location {
   gap: 4px;
   height: 100%;
 }
-
 header .shopping-container #location span {
   font-size: var(--font-title-xxs);
   font-family: var(--font-roboto);
@@ -62,7 +57,6 @@ header .shopping-container #location i {
   width: 36px;
   height: 40px;
 }
-
 .shopping-cart i {
   position: absolute;
   top: 50%;
@@ -73,7 +67,6 @@ header .shopping-container #location i {
   font-size: 22px;
   color: var(--color-amber);
 }
-
 header nav div button div {
   display: none;
 
@@ -89,7 +82,6 @@ header nav div button div {
   justify-content: center;
   align-items: center;
 }
-
 header nav div button div .itemCounter {
   position: absolute;
   top: 50%;
@@ -100,12 +92,13 @@ header nav div button div .itemCounter {
   font-weight: var(--fw-bold);
   font-family: var(--font-roboto);
 }
-
 /* INFORMAÇÕES DE MAIN */
 main {
   display: flex;
-  padding: 0 160px;
   gap: 32px;
+  justify-content: space-between;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 main section h1 {
   font-size: var(--font-title-xs);
@@ -115,9 +108,7 @@ main section h1 {
   line-height: var(--lh-normal);
   margin-bottom: 15px;
 }
-
 /* INFORMAÇÕES DE ENDEREÇO */
-
 main section .conteiner-form {
   width: 640px;
 }
@@ -127,7 +118,6 @@ main section .conteiner-form form {
   border-radius: 6px;
   margin-bottom: 12px;
 }
-
 main section .conteiner-form form .description {
   display: flex;
   margin-bottom: 32px;
@@ -172,7 +162,6 @@ main section .conteiner-form form .inputs input {
   font-weight: var(--fw-regular);
   font-family: var(--font-roboto);
 }
-
 main section .conteiner-form form .inputs #zipcode,
 #number-adress,
 #district {
@@ -203,7 +192,6 @@ main section .conteiner-form form .inputs div label {
   font-style: italic;
   color: var(--color-base-label);
 }
-
 /* INFORMAÇÕES DE PAGAMENTO */
 main section .conteiner-form .paySelected {
   background-color: var(--color-base-card);
@@ -215,12 +203,10 @@ main section .conteiner-form .paySelected .description {
   margin-bottom: 32px;
   gap: 8px;
 }
-
 main section .conteiner-form .paySelected .description .text-description {
   display: flex;
   flex-direction: column;
 }
-
 main section .conteiner-form .paySelected i {
   color: var(--color-amber);
   font-size: 22px;
@@ -254,58 +240,58 @@ main section .conteiner-form .paySelected .buttons label {
   align-items: center;
   text-transform: uppercase;
   border-radius: 6px;
-  background-color: var(--color-base-button);  
+  background-color: var(--color-base-button);
   cursor: pointer;
 }
-main section .conteiner-form .paySelected .buttons label span{
-font-size: var(--font-text-s);
- white-space: nowrap;
+main section .conteiner-form .paySelected .buttons label span {
+  font-size: var(--font-text-s);
+  white-space: nowrap;
 }
-main section .conteiner-form .paySelected .buttons label input{ 
- position:absolute;
-  opacity:0;
-  pointer-events:none;
+main section .conteiner-form .paySelected .buttons label input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
-main section .conteiner-form .paySelected .buttons label:has(input:checked){ 
+main section .conteiner-form .paySelected .buttons label:has(input:checked) {
   border: solid 1px var(--color-amber);
-  background:var(--color-vanilla);
+  background: var(--color-vanilla);
 }
-
 /* INFORMAÇÕES DE itens escolidos */
 main section .container-itens {
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-base-card);
   border-radius: 0 40px 0 40px;
-  padding: 40px;
-
+  padding: 32px;
+  max-width: 490px;
 }
-main section .container-itens article {
+main section .container-itens ul li {
   display: flex;
-  width:380px
+  gap: 24px;
+  padding: 4px 8px;
+  margin-top: 24px;
 }
-
-main section .container-itens article img {
+main section .container-itens ul li img {
   width: 64px;
   height: 64px;
 }
-
-main section .container-itens article .iten-select{
-
+main section .container-itens ul li .iten-select {
+  display: flex;
+  flex-direction: column;
 }
-
-main section .container-itens article .iten-select h1{
-  font-size: var(--font-title-s);
-  font-family: var(--font-baloo);
-  font-weight: var(--fw-bold);
+main section .container-itens ul li .iten-select h1 {
+  font-size: var(--font-text-m);
+  font-family: var(--font-roboto);
+  font-weight: var(--fw-regular);
   line-height: var(--lh-normal);
   color: var(--color-base-subtitle);
 }
-
-
-
-
 /*input css*/
-
-main section .container-itens article .iten-select .action-iten .amount {
+main section .container-itens ul li {
+  padding-bottom: 24px;
+  border-bottom: solid 1px var(--color-base-button);
+}
+main section .container-itens ul li .iten-select .action-iten .amount {
   display: flex;
   background: var(--color-base-button);
   border-radius: 6px;
@@ -314,20 +300,18 @@ main section .container-itens article .iten-select .action-iten .amount {
   gap: 4px;
   padding: 8px;
   height: 38px;
-  width: 72px;
-  
 }
-main section .container-itens article .iten-select.action-iten  .amount button {
+main section .container-itens ul li .iten-select.action-iten .amount button {
   background-color: transparent;
   display: flex;
   align-items: center;
 }
-main section .container-itens article .iten-select .action-iten .amount button i {
+main section .container-itens ul li .iten-select .action-iten .amount button i {
   color: var(--color-amber);
   font-size: 14px;
   cursor: pointer;
 }
-main section .container-itens article .iten-select .action-iten .amount input {
+main section .container-itens ul li .iten-select .action-iten .amount input {
   border-radius: 6px;
   background-color: transparent;
   border: none;
@@ -336,37 +320,98 @@ main section .container-itens article .iten-select .action-iten .amount input {
   font-size: var(--font-text-m);
   color: var(--color-base-title);
 }
-main section .container-itens article .iten-select .amount input[type="number"]::-webkit-outer-spin-button,
-main section .container-itens article .iten-select .amount input[type="number"]::-webkit-inner-spin-button{
+main
+  section
+  .container-itens
+  ul
+  li
+  .iten-select
+  .amount
+  input[type="number"]::-webkit-outer-spin-button,
+main
+  section
+  .container-itens
+  ul
+  .iten-select
+  .amount
+  input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-main section .container-itens article .iten-select .amount input[type="number"]{
+main section .container-itens ul li .iten-select .amount input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
 }
-main section .container-itens article .iten-select .action-iten{
+main section .container-itens ul li .iten-select .action-iten {
   display: flex;
+  flex-direction: row;
   gap: 8px;
 }
-main section .container-itens article .iten-select .action-iten button {
-cursor: pointer;
-background-color: var(--color-base-button);
-padding: 8px;
-font-size:var(--font-text-s) ;
-font-family:var(--font-roboto) ;
-color:var(--color-base-text) ;
-border-radius: 6px;
+main section .container-itens ul li .iten-select .action-iten button {
+  cursor: pointer;
+  background-color: var(--color-base-button);
+  font-size: var(--font-text-s);
+  font-family: var(--font-roboto);
+  color: var(--color-base-text);
+  border-radius: 6px;
+  text-transform: uppercase;
 }
-main section .container-itens article .iten-select .action-iten button i {
-   color: var(--color-amber);
+main section .container-itens ul li .iten-select .action-iten button i {
+  color: var(--color-amber);
   font-size: 14px;
 }
+main section .container-itens ul li span {
+  font-family: var(--font-roboto);
+  font-size: var(--font-text-s);
+  color: var(--color-base-text);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-normal);
+  font-style: italic;
+  text-align: right;
+}
+main section .container-itens ul li span strong {
+  font-family: var(--font-roboto);
+  font-size: 8px;
+  color: var(--color-base-text);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+}
+main section .container-itens ul li .iten-select .action-iten .remove {
+  padding: 8px;
+  text-wrap: nowrap;
+}
 
-main section .container-itens article span {
-font-family:var(--font-roboto) ;
-font-size:var(--font-text-m) ;
-color:var(--color-base-text) ;
-font-weight:var(--fw-bold) ;
-line-height:var(--lh-normal) ;
+/* tabela que e tabela */
+table {
+  margin-top: 24px ;
+}
+table tbody tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+table tbody tr td {
+  font-family: var(--font-roboto);
+  font-size: var(--font-text-s);
+  color: (--color-base-text);
+  font-weight: var(--fw-regular);
+}
+
+.all td{
+  font-weight: var(--fw-bold);
+  font-size: var(--font-title-m);
+}
+
+#confirmation {
+  background-color: var(--color-amber);
+ 
+  border-radius: 6px;
+  color: var(--color-white);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  text-wrap: nowrap;  
+
+  margin-top: 12px;
+   padding: 12px;
 }

@@ -1,6 +1,6 @@
 var span = document.querySelector(".itemCounter");
 var div = document.querySelector(".container-couter");
-var itens = [];
+export const itens = [];
 
 export function intesInCart() {
   var cartButtons = document.querySelectorAll(".addToCard");

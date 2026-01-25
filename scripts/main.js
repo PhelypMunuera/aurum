@@ -1,6 +1,7 @@
 import { products } from "./products.js";
 import { amontInput } from "./operations.js";
 import { intesInCart } from "./intes-in-cart.js";
+import { goTocart } from "./render-in-cart.js";
 
 const unorderedList = document.querySelector("ul");
 
@@ -37,5 +38,7 @@ products.forEach(({  id, tags, image, name, price, descriptions }) => {
 });
 
 amontInput();
-intesInCart()
+intesInCart();
+goTocart();
+
 
