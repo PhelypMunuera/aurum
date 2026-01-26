@@ -1,7 +1,7 @@
 
 export const products = [
     {
-        id: crypto.randomUUID(),
+        id: '001',
         image:'relogio-1', 
         tags:['esportivo'],
         name:'Chronos' ,
@@ -9,7 +9,7 @@ export const products = [
         price: 982.99, 
     },
     {
-        id: crypto.randomUUID(),
+        id: '002',
         image:'relogio-2', 
         tags:['casual'],
         name:'Tempus Noir' ,
@@ -17,7 +17,7 @@ export const products = [
         price: 982.99, 
     },
     {
-        id: crypto.randomUUID(),
+        id: '003',
         image:'relogio-3', 
         tags:['casual'],
         name:'Atlas Timekeeper' ,
@@ -25,7 +25,7 @@ export const products = [
         price: 982.99, 
     },
     {
-        id: crypto.randomUUID(),
+        id: '004',
         image:'relogio-4', 
         tags:['classico', 'luxo'],
         name:'Vértice Prime' ,
@@ -33,7 +33,7 @@ export const products = [
         price: 982.99, 
     },
     {
-        id: crypto.randomUUID(),
+        id: '005',
         image:'relogio-5', 
         tags:['classico', 'luxo'],
         name:'Nebula One' ,
@@ -41,7 +41,7 @@ export const products = [
         price: 982.99, 
     },
     {
-        id: crypto.randomUUID(),
+        id: 'classico01',
         image:'relogio-6', 
         tags:['classico', 'luxo'],
         name:'Eon Steel' ,
@@ -49,7 +49,7 @@ export const products = [
         price: 982.99, 
     },
     {
-        id: crypto.randomUUID(),
+        id: '006',
         image:'relogio-7', 
         tags:['classico', 'importado'],
         name:'Chronix Pulse' ,
@@ -57,7 +57,7 @@ export const products = [
         price: 982.99, 
     },
     {
-        id: crypto.randomUUID(),
+        id: '007',
         image:'relogio-8', 
         tags:['classico', 'luxo'],
         name:'Lumen Watch' ,
@@ -65,7 +65,7 @@ export const products = [
         price: 982.99, 
     },
     {
-        id: crypto.randomUUID(),
+        id: '009',
         image:'relogio-9', 
         tags:['classico', 'luxo'],
         name:'Orion Mark I' ,
@@ -73,7 +73,7 @@ export const products = [
         price: 982.99, 
     },
     {
-        id: crypto.randomUUID(),
+        id: '010',
         image:'relogio-10', 
         tags:['esportivo', 'casual'],
         name:'Irlandês' ,
@@ -81,7 +81,7 @@ export const products = [
         price: 982.99, 
     },
     {
-        id: crypto.randomUUID(),
+        id: '011',
         image:'relogio-11', 
         tags:['classico', 'luxo'],
         name:'Zenith Core' ,
@@ -89,7 +89,7 @@ export const products = [
         price: 982.99, 
     },
     {
-        id: crypto.randomUUID(),
+        id: '012',
         image:'relogio-12', 
         tags:['automático', 'importado'],
         name:'Cubano' ,
@@ -97,7 +97,7 @@ export const products = [
         price: 982.99, 
     },
     {
-        id: crypto.randomUUID(),
+        id: '013',
         image:'relogio-13', 
         tags:['casual'],
         name:'Astra Vault' ,
@@ -105,7 +105,7 @@ export const products = [
         price: 982.99, 
     },
     {
-        id: crypto.randomUUID(),
+        id: '014',
         image:'relogio-14', 
         tags:['esportivo'],
         name:'IronTick Classic' ,
