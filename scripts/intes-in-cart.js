@@ -4,7 +4,7 @@ var itens = [];
 
 export function intesInCart() {
   var cartButtons = document.querySelectorAll(".addToCard");
-  var itemsSalvos = JSON.parse(localStorage.getItem("productsInCart"));
+  var itemsSalvos = JSON.parse(localStorage.getItem("productsInCart") || "[]");
 nunInCart();
   cartButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -31,7 +31,7 @@ nunInCart();
       itens = itemsSalvos
       div.style.display = "flex";
       console.log(itens);
-    }
+    } return
   }
   
 }
