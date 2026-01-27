@@ -11,7 +11,6 @@ export function intesInCart() {
       var product = button.closest("article");
       const id = product.id;
       const quantia = product.querySelector("input").value;
-
       const objeto = itens.find((obj) => obj.id === id);
       itens = itemsSalvos;
 
@@ -44,6 +43,8 @@ export function intesInCart() {
   function clear() {
     localStorage.clear();
   }
+
+
 }
 
 // e meu imput for igual a qtd atual
