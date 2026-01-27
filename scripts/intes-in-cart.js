@@ -5,12 +5,16 @@ var itens = [];
 export function intesInCart() {
   var cartButtons = document.querySelectorAll(".addToCard");
   var itemsSalvos = JSON.parse(localStorage.getItem("productsInCart") || "[]");
-nunInCart();
+  nunInCart();
   cartButtons.forEach((button) => {
     button.addEventListener("click", () => {
       var product = button.closest("article");
       const id = product.id;
+      const quantia = product.querySelector("input").value;
+
+      const objeto = itens.find((obj) => obj.id === id);
       itens = itemsSalvos;
+
       if (!itens.some((item) => item.id === id)) {
         const item = {};
         item.id = id;
@@ -21,17 +25,25 @@ nunInCart();
         div.style.display = "flex";
 
         localStorage.setItem("productsInCart", JSON.stringify(itens));
-      } 
+      } else if (objeto.id === id && objeto.qtd !== quantia) {
+        objeto.qtd = quantia
+        console.log(objeto)
+      }
     });
   });
 
   function nunInCart() {
     if (itemsSalvos.length > 0) {
       span.textContent = itemsSalvos.length;
-      itens = itemsSalvos
+      itens = itemsSalvos;
       div.style.display = "flex";
-      console.log(itens);
-    } return
+    }
+    return;
   }
-  
+
+  function clear() {
+    localStorage.clear();
+  }
 }
+
+// e meu imput for igual a qtd atual
