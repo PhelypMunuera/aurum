@@ -37,7 +37,7 @@
             <i class="ph-fill ph-map-pin"></i>
             <span>Porto Alegre, RS</span>
           </div>
-          <button onPress="" class="shopping-cart">
+          <button disabled class="shopping-cart">
             <div class="container-couter">
               <span class="itemCounter">0</span>
             </div>
@@ -144,45 +144,26 @@
       <section class="selectedIntens">
         <h1>Cafés selecionados</h1>
         <div class="container-itens">
-          <ul>
-            <li>
-              <img src="../../assets/image/products/relogio-1.png" alt="" />
-              <div class="iten-select">
-                <h1>Expresso Tradicional</h1>
-                <div class="action-iten">
-                  <div class="amount">
-                    <button class=""><i class="ph ph-minus"></i></button>
-                    <input disabled type="number" value="1" />
-                    <button class=""><i class="ph ph-plus"></i></button>
-                  </div>
-                  <button class="remove">
-                    <i class="ph ph-trash"></i>
-                    Remover
-                  </button>
-                </div>
-              </div>
-              <span><strong>R$</strong> 897,90</span>
-            </li>
-           
+          <ul>      
 
           </ul>
           <table>
             <tbody>
               <tr>
                 <td>Total de itens</td>
-                <td class="sum">8273,98</td>
+                <td class="sum"></td>
               </tr>
               <tr>
                 <td>Entrega</td>
-                <td class="delivery">98,98</td>
+                <td class="delivery">98.98</td>
               </tr>
               <tr class="all">
                 <td >Total</td>
-                <td class="total">9823,00</td>
+                <td class="total"></td>
               </tr>
             </tbody>
           </table>
-          <button id="confirmation">confirmar pedido</button>
+          <button onPress='goTofiniched()' id="confirmation">confirmar pedido</button>
         </div>
       </section>
     </main>

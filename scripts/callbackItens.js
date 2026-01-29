@@ -1,4 +1,6 @@
 import { products } from "./products.js";
+import { goTofiniched } from "./route.js";
+import { calculator } from "./calculator.js";
 
 export function printItens() {
   const itensSave = JSON.parse(localStorage.getItem("productsInCart")) || [];
@@ -28,7 +30,7 @@ export function printItens() {
                   </button>
                 </div>
               </div>
-              <span><strong>R$</strong> ${backitem.price * item.qtd}</span>
+              <span class="price">R$<strong>${backitem.price * item.qtd}</strong></span>
 
 
       </li>`;
@@ -39,3 +41,5 @@ export function printItens() {
 }
 
 printItens();
+goTofiniched()
+calculator()

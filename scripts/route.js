@@ -1,12 +1,23 @@
 import { amontInput } from "./operations.js";
 import { intesInCart } from "./intes-in-cart.js";
-import { goTocart } from "./goToCart-button.js";
 
-
-
-
-export function route(){
-amontInput();
-intesInCart();
-goTocart();
+export function goTocart() {
+  document.querySelector(".shopping-cart").addEventListener("click", () => {
+    window.location.href = "../src/pages/checkout.html";
+  });
 }
+
+export function goTofiniched() {
+  document.querySelector("#confirmation").addEventListener("click", () => {
+    window.location.href = "../../src/pages/finished.html";
+  });
+}
+
+export function route() {
+  amontInput();
+  intesInCart();
+  goTocart();
+
+}
+
+route();
